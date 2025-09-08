@@ -236,7 +236,7 @@ function sanitizeInput(input) {
         return "";
     }
     //escape all occurances of apostrophe
-    input = input.replace("'", "''");
+    input = input.replace(/'/g, "''");
 
     return input;
 }
